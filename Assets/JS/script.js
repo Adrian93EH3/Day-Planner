@@ -126,15 +126,15 @@ timeblock.forEach(function (thisHour) {
     var planData = $("<textarea>");
     hourPlan.append(planData);
     planData.attr("id", thisHour.id);
-    if (thisHour.time < moment().format("kk")) {
+    if (thisHour.time < moment().format("HH")) {
         planData.attr({
             "class": "past",
         })
-    } else if (thisHour.time === moment().format("kk")) {
+    } else if (thisHour.time === moment().format("HH")) {
         planData.attr({
             "class": "present"
         })
-    } else if (thisHour.time > moment().format("kk")) {
+    } else if (thisHour.time > moment().format("HH")) {
         planData.attr({
             "class": "future"
         })

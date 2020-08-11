@@ -1,3 +1,8 @@
+# User Story
+AS AN employee with a busy schedule <br>
+I WANT to add important events to a daily planner <br>
+SO THAT I can manage my time effectively <br>
+
 # Day-Planner
 This project was very fun to make. I loved the challenge and I loved making a planner seeing as I'm a very advocate user of planning/to-do listing.
 

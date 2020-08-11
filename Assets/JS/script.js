@@ -77,3 +77,11 @@ function getHeaderDate() {
 function saveReminders() {
     localStorage.setItem("myDay", JSON.stringify(myDay));
 }
+
+
+// Sets any data in local storage to the view
+function displayReminders() {
+    myDay.forEach(function (_thisHour) {
+        $(`#${_thisHour.id}`).val(_thisHour.reminder);
+    })
+}

@@ -72,3 +72,8 @@ function getHeaderDate() {
     var currentHeaderDate = moment().format('dddd, MMMM Do');
     $("#currentDay").text(currentHeaderDate);
 }
+
+// Saves data to local storage
+function saveReminders() {
+    localStorage.setItem("myDay", JSON.stringify(myDay));
+}

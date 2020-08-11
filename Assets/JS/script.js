@@ -101,7 +101,7 @@ function init() {
 // Loads header date by calling the function here
 getHeaderDate();
 
-// Creates the visuals for the scheduler body
+// Creates the visuals for the body of the planner
 myDay.forEach(function (thisHour) {
 
     // Creates rows for timeblocks via DOM manipulation
@@ -110,3 +110,10 @@ myDay.forEach(function (thisHour) {
     });
 
     $(".container").append(hourRow);
+
+    // Create time fields
+    var hourField = $("<div>")
+        .text(`${thisHour.hour}${thisHour.meridiem}`)
+        .attr({
+            "class": "col-md-2 hour"
+    });

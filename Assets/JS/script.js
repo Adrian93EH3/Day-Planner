@@ -85,3 +85,15 @@ function displayReminders() {
         $(`#${_thisHour.id}`).val(_thisHour.reminder);
     })
 }
+
+// Sets any existing localStorage data to the view if it exists
+function init() {
+    var storedDay = JSON.parse(localStorage.getItem("myDay"));
+
+    if (storedDay) {
+        myDay = storedDay;
+    }
+
+    saveReminders();
+    displayReminders();
+}

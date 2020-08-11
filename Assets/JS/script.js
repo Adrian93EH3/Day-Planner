@@ -126,16 +126,26 @@ myDay.forEach(function (thisHour) {
     var planData = $("<textarea>");
     hourPlan.append(planData);
     planData.attr("id", thisHour.id);
-    if (thisHour.time < moment().format("HH")) {
+    if (thisHour.time < moment().format("kk")) {
         planData.attr({
             "class": "past",
         })
-    } else if (thisHour.time === moment().format("HH")) {
+    } else if (thisHour.time === moment().format("kk")) {
         planData.attr({
             "class": "present"
         })
-    } else if (thisHour.time > moment().format("HH")) {
+    } else if (thisHour.time > moment().format("kk")) {
         planData.attr({
             "class": "future"
         })
     }
+
+    // Creates save button on the side of the planner
+    var saveButton = $("<i class='far fa-save fa-lg'></i>")
+    var savePlan = $("<button>")
+        .attr({
+            "class": "col-md-1 saveBtn"
+    });
+    savePlan.append(saveButton);
+    hourRow.append(hourField, hourPlan, savePlan);
+})

@@ -100,3 +100,13 @@ function init() {
 
 // Loads header date by calling the function here
 getHeaderDate();
+
+// Creates the visuals for the scheduler body
+myDay.forEach(function (thisHour) {
+
+    // Creates rows for timeblocks via DOM manipulation
+    var hourRow = $("<form>").attr({
+        "class": "row"
+    });
+
+    $(".container").append(hourRow);

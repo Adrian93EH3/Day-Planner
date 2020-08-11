@@ -150,7 +150,7 @@ myDay.forEach(function (thisHour) {
     hourRow.append(hourField, hourPlan, savePlan);
 })
 
-// loads any existing localstorage data after components created
+// Loads any existing localstorage data after components created
 init();
 
 // Saves data to be used in localStorage

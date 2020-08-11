@@ -31,36 +31,36 @@ var timeblock = [
     },
     {
         id: "4",
-        hour: "1",
-        time: "1",
+        hour: "01",
+        time: "13",
         meridiem: "pm",
         reminder: ""
     },
     {
         id: "5",
-        hour: "2",
-        time: "2",
+        hour: "02",
+        time: "14",
         meridiem: "pm",
         reminder: ""
     },
     {
         id: "6",
-        hour: "3",
-        time: "3",
+        hour: "03",
+        time: "15",
         meridiem: "pm",
         reminder: ""
     },
     {
         id: "7",
-        hour: "4",
-        time: "4",
+        hour: "04",
+        time: "16",
         meridiem: "pm",
         reminder: ""
     },
     {
         id: "8",
-        hour: "5",
-        time: "5",
+        hour: "05",
+        time: "17",
         meridiem: "pm",
         reminder: ""
     },
@@ -75,23 +75,23 @@ function getHeaderDate() {
 
 // Saves data to local storage
 function saveReminders() {
-    localStorage.setItem("myDay", JSON.stringify(myDay));
+    localStorage.setItem("timeblock", JSON.stringify(timeblock));
 }
 
 
 // Sets any data in local storage to the view
 function displayReminders() {
-    myDay.forEach(function (_thisHour) {
+    timeblock.forEach(function (_thisHour) {
         $(`#${_thisHour.id}`).val(_thisHour.reminder);
     })
 }
 
 // Sets any existing localStorage data to the view if it exists
 function init() {
-    var storedDay = JSON.parse(localStorage.getItem("myDay"));
+    var storedDay = JSON.parse(localStorage.getItem("timeblock"));
 
     if (storedDay) {
-        myDay = storedDay;
+        timeblock = storedDay;
     }
 
     saveReminders();
@@ -102,7 +102,7 @@ function init() {
 getHeaderDate();
 
 // Creates the visuals for the body of the planner
-myDay.forEach(function (thisHour) {
+timeblock.forEach(function (thisHour) {
 
     // Creates rows for timeblocks via DOM manipulation
     var hourRow = $("<form>").attr({
@@ -157,7 +157,7 @@ init();
 $(".saveBtn").on("click", function (event) {
     event.preventDefault();
     var saveIndex = $(this).siblings(".description").children(".future").attr("id");
-    myDay[saveIndex].reminder = $(this).siblings(".description").children(".future").val();
+    timeblock[saveIndex].reminder = $(this).siblings(".description").children(".future").val();
     console.log(saveIndex);
     saveReminders();
     displayReminders();

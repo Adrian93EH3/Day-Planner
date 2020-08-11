@@ -97,3 +97,6 @@ function init() {
     saveReminders();
     displayReminders();
 }
+
+// Loads header date by calling the function here
+getHeaderDate();

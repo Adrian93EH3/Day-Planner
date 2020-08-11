@@ -8,6 +8,8 @@ This project was very fun to make. I loved the challenge and I loved making a pl
 
 # Screenshot of Project
 [img](https://prnt.sc/txzze8)
+
+# Link to Project
 [link](https://adrian93eh3.github.io/Day-Planner/)
 
 # Requirements

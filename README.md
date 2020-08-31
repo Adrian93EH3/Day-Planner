@@ -12,4 +12,4 @@ This is my resubmission for my work day scheduler. Below you will find the deplo
 
 # Future Development
 
-I'd love to incorporate a past, present, future function utilizing moment.js to be able to tell whether or not I'm before, currently or ahead of the time. I can safely assume through pseudocoding, that it'd be something like a for loop and/or a if/else statement. Maybe some CSS to add or remove a class/attribute given whether or not it's past, present, future.
+I'd love to incorporate a past, present, future function utilizing moment.js to be able to tell whether or not I'm before, currently or ahead of the time. I can safely assume through pseudocoding, that it'd be something like a for loop and/or a if/else statement. Maybe some CSS to add or remove a class/attribute given whether or not it's the past, present or future.

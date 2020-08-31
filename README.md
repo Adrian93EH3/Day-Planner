@@ -10,7 +10,7 @@ This project was very fun to make. I loved the challenge and I loved making a pl
 [img](https://prnt.sc/txzze8)
 
 # Link to Project
-[link](https://adrian93eh3.github.io/Day-Planner/)
+<img src="Images\screenshotofproject.png">
 
 # Requirements
 GIVEN I am using a daily planner to create a schedule <br>

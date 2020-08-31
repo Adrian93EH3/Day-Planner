@@ -4,7 +4,7 @@ This is my resubmission for my work day scheduler. Below you will find the deplo
 
 # Link to Project
 
-<link href="https://adrian93eh3.github.io/Day-Planner/">Enjoy the deployed app!</link>
+[link]Enjoy the deployed app!(https://adrian93eh3.github.io/Day-Planner/)
 
 # Screenshot of Project
 

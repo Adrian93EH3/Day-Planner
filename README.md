@@ -8,7 +8,7 @@ This is my resubmission for my work day scheduler. Below you will find the deplo
 
 # Screenshot of Project
 
-<img src="../Images/screenshotofproject.png">
+<img src="Images\screenshotofproject.png">
 
 # Future Development
 

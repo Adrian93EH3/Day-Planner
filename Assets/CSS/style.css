@@ -10,7 +10,7 @@ body {
 
 .tasks{
   white-space: pre-wrap;
-  background: #eee;
+  background: white;
   border: none;
   resize: none;
   color: #000000;
@@ -42,4 +42,19 @@ body {
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+}
+
+.past {
+  background-color: gainsboro;
+  color: black;
+}
+
+.present {
+  background-color: wheat;
+  color: black;
+}
+
+.future {
+  background-color: green;
+  color: black;
 }

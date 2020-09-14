@@ -4,7 +4,7 @@ This is my resubmission for my work day scheduler. Below you will find the deplo
 
 # Link to Project
 
-[link](https://adrian93eh3.github.io/Day-Planner/)
+https://adrian93eh3.github.io/Day-Planner/
 
 # Screenshot of Project
 
